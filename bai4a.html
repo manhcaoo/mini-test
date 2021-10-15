@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Viết chương trình nhập vào từ ô input, hiện kết quả ra thẻ p: Nhập vào a,
+    hiển thị ra chu vi và diện tích và hình vuông độ dài cạnh a. -->
+    <input id="aInput" type="text" />
+    <input id="bInput" type="text" />
+    <button id="btn" onclick="clickButton()">Check</button>
+    <p id="display1"></p>
+    <p id="display2"></p>
+
+    <script>
+      function clickButton() {
+        let aInput = +document.getElementById("aInput").value;
+        let bInput = +document.getElementById("bInput").value;
+        let display1 = document.getElementById("display1");
+        let display2 = document.getElementById("display2");
+        let dienTich = aInput * bInput;
+        let chuVi = aInput * 4;
+        display1.innerText = dienTich;
+        display2.innerText = chuVi;
+      }
+    </script>
+  </body>
+</html>

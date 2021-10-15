@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="aInput" type="text" />
+    <input id="bInput" type="text" />
+    <button id="btn" onclick="clickButton()">Check</button>
+    <p id="display1"></p>
+    <p id="display2"></p>
+    <script>
+      function clickButton() {
+        let aInput = +document.getElementById("aInput").value;
+        let bInput = +document.getElementById("bInput").value;
+        let display1 = document.getElementById("display1");
+        let display2 = document.getElementById("display2");
+        let loopingTime = aInput + bInput;
+        let total;
+        for (let i = 0; i < loopingTime; i++) {
+          total += aInput;
+          console.log(sum);
+        }
+      }
+    </script>
+  </body>
+</html>

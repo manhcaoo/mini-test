@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Insert Numbers</h3>
+    <input id="nb1" type="text" />
+    <input id="nb2" type="text" />
+    <button id="btn" onclick="clickButton()">do</button>
+    <h1 id="displayingResult"></h1>
+    <script>
+      //   Câu lệnh nào nhận vào giá trị từ 1 ô input. Viết code nhận a và b từ 2 ô input và hiển thị S = a*b ra thẻ h1.
+      function clickButton() {
+        let nb1 = +document.getElementById("nb1").value;
+        let nb2 = +document.getElementById("nb2").value;
+        let displayingResult = document.getElementById("displayingResult");
+        let multiplyTheTwo = nb1 * nb2;
+        displayingResult.innerText = multiplyTheTwo;
+      }
+    </script>
+  </body>
+</html>

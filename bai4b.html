@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="aInput" type="text" />
+    <input id="bInput" type="text" />
+    <button id="btn" onclick="clickButton()">Check</button>
+    <p id="display1"></p>
+    <p id="display2"></p>
+
+    <script>
+      function clickButton() {
+        let aInput = +document.getElementById("aInput").value;
+        let bInput = +document.getElementById("bInput").value;
+        let display1 = document.getElementById("display1");
+        let display2 = document.getElementById("display2");
+        let cal1 = aInput ** 2;
+        let cal2 = aInput ** bInput;
+        display1.innerText = cal1;
+        display2.innerText = cal2;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Nhập vào a là năm, in ra thế kỉ. -->
+
+    <h2>Insert below</h2>
+    <input id="yearInput" type="text" /><br />
+    <br />
+    <button onclick="findCentury()" id="btn">Check</button>
+    <br />
+    <br />
+    <div id="resultOutput">Result</div>
+    <script>
+      function findCentury() {
+        let yearInput = +document.getElementById("yearInput").value;
+
+        if (yearInput <= 0) {
+          console.log("0 and negative is not allow");
+        } else if (yearInput <= 100) {
+          console.log("1st century");
+        } else {
+          console.log(parseInt(yearInput / 100) + 1 + " century");
+        }
+      }
+    </script>
+  </body>
+</html>
